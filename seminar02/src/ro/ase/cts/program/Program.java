@@ -12,17 +12,17 @@ import java.util.List;
 
 public class Program {
 
-	public static List<Aplicant> citesteAplicanti(String numeFisier, Readable reader) throws FileNotFoundException{
+	public static List<Aplicant> citesteAplicanti(Readable reader) throws FileNotFoundException{
 //		List<Aplicant> listaAplicanti = reader.readAplicanti(numeFisier);
 //		return listaAplicanti;
 
-		return reader.readAplicanti(numeFisier);
+		return reader.readAplicanti();
 	}
 
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = citesteAplicanti("seminar02/elevi.txt", new ElevReader());
+			listaAplicanti = citesteAplicanti(new ElevReader("seminar02/elevi.txt"));
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
