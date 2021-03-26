@@ -2,6 +2,7 @@ package ro.ase.cts.program;
 
 import ro.ase.cts.clase.Angajat;
 import ro.ase.cts.clase.Aplicant;
+import ro.ase.cts.clase.Proiect;
 import ro.ase.cts.clase.readers.AngajatReader;
 import ro.ase.cts.clase.readers.ElevReader;
 import ro.ase.cts.clase.readers.Readable;
@@ -23,8 +24,12 @@ public class Program {
 		List<Aplicant> listaAplicanti;
 		try {
 			listaAplicanti = citesteAplicanti(new ElevReader("seminar02/elevi.txt"));
-			for(Aplicant aplicant:listaAplicanti)
+			Proiect proiect1 = new Proiect(80);
+			for(Aplicant aplicant:listaAplicanti) {
 				System.out.println(aplicant.toString());
+				System.out.println(aplicant.getFinantare());
+				aplicant.displayStateInProject(proiect1);
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
