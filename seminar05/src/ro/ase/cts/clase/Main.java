@@ -1,4 +1,4 @@
-package ro.ase.cts;
+package ro.ase.cts.clase;
 
 import ro.ase.cts.clase.Retata;
 
