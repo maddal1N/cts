@@ -9,5 +9,11 @@ public class Main {
 
         System.out.println(medic1);
         System.out.println(asistent1);
+        System.out.println("-------------------");
+
+        PersonalMedical medic2 =FactorySingleton.getInstance().create(TipPersonal.MEDIC,"Ionescu2",5000);
+        PersonalMedical asistent2 =FactorySingleton.getInstance().create(TipPersonal.ASISTENT,"Popescu2",2000);
+        System.out.println(medic2);
+        System.out.println(asistent2);
     }
 }
