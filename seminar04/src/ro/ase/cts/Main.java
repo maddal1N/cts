@@ -1,5 +1,6 @@
 package ro.ase.cts;
 
+import ro.ase.cts.clase.Masina;
 import ro.ase.cts.clase.Parlament;
 import ro.ase.cts.clase.ParlamentLazy;
 
@@ -25,5 +26,12 @@ public class Main {
         ParlamentLazy parlamentLazy2 = ParlamentLazy.getInstance("UK",500,8,"in UK");
         System.out.println(parlamentLazy1.toString());
         System.out.println(parlamentLazy2.toString());
+        System.out.println("-----------------------------------------------");
+
+        Masina masina1 = Masina.getInstace("Dacia",4,1.6f);
+        Masina masina2 = Masina.getInstace("Mercedes",8,2.5f);
+        System.out.println(masina1.toString());
+        System.out.println(masina2.toString());
+        System.out.println("-----------------------------------------------");
     }
 }
