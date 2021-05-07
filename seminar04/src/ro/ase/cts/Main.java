@@ -1,8 +1,8 @@
 package ro.ase.cts;
 
-import ro.ase.cts.clase.Masina;
-import ro.ase.cts.clase.Parlament;
-import ro.ase.cts.clase.ParlamentLazy;
+import ro.ase.cts.AdapterObiecte.clase.Masina;
+import ro.ase.cts.AdapterObiecte.clase.Parlament;
+import ro.ase.cts.AdapterObiecte.clase.ParlamentLazy;
 
 public class Main {
     public static void main(String[] args) {
