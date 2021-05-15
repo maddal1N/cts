@@ -12,9 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
         Leasing leasing = new Leasing("Bogdan",10000);
+
         AdapterLeasing adapterLeasing = new AdapterLeasing(leasing);
         adapterLeasing.crediteaza();
         System.out.println("-----------");
+
         printeazaInformatiiCredit(adapterLeasing);
     }
 }

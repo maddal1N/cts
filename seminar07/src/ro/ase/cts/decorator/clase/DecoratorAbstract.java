@@ -7,7 +7,6 @@ public abstract class DecoratorAbstract implements CardBancar{
         this.cardBancar = cardBancar;
     }
 
-
     public CardBancar getCardBancar() {
         return cardBancar;
     }

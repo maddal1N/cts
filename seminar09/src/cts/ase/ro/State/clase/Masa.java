@@ -4,7 +4,7 @@ public class Masa {
     private int nrMasa;
     private State stare;
 
-    public Masa(int nrMasa) {
+    public Masa(int nrMasa) { //aici nu primeste starea, ci o setam noi default ca fiind Libera
         this.nrMasa = nrMasa;
         this.stare = new Libera();
     }

@@ -13,6 +13,13 @@ public class Main {
 
         Retata retata2 = (Retata) retata1.copiaza();
 
+//        List<Integer> cantitati2 = new ArrayList<>();
+//        cantitati2.add(50);
+//        cantitati2.add(23);
+//        cantitati2.add(45);
+//        retata2.setCantitati(cantitati2);
+
+
         System.out.println(retata1);
         System.out.println(retata2);
     }

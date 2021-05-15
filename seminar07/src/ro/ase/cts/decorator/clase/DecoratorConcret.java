@@ -8,6 +8,6 @@ public class DecoratorConcret extends DecoratorAbstract{
 
     @Override
     public void platesteContactless() {
-        System.out.println(((Card)super.getCardBancar()).getTitular() + " a platit contactless.");
+        System.out.println( ((Card)super.getCardBancar()).getTitular() + " a platit contactless.");
     }
 }

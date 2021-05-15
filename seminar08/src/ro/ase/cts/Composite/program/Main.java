@@ -29,5 +29,7 @@ public class Main {
         meniu.adaugaNod(desert);
         System.out.println("---------------\n---------------");
         meniu.printareElement();
+
+//        bauturi.getNod(2).printareElement();
     }
 }

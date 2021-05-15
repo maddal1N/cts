@@ -5,6 +5,7 @@ public class Facade {
 
         if(OperatorMese.esteLibera(masa.getNrMasa())){
             Picolo picolo1=new Picolo("Georgescu");
+
             if(picolo1.esteDebarasata(masa.getNrMasa())){
                 if(picolo1.esteAranjata(masa.getNrMasa())){
                     return true;

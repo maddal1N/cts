@@ -1,11 +1,10 @@
 package ro.ase.cts.Chain.Clase;
 
 public abstract class Cont {
-
     private float sold;
     private Cont succesorCont;
 
-    public Cont(float sold) {
+    public Cont(float sold) { //default, nu are succesor
         this.sold = sold;
     }
 
