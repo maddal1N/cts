@@ -1,13 +1,18 @@
 package ro.ase.cts.Teste;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import ro.ase.cts.Categories.TesteRight;
+import ro.ase.cts.Categories.TesteUrgente;
 import ro.ase.cts.Clase.Grupa;
+import ro.ase.cts.Mock.StudentStub;
 
 import static org.junit.Assert.*;
 
 public class GrupaTest {
 
     @Test
+    @Category(TesteRight.class)
     public void testConstructorRight() {
         Grupa grupa = new Grupa(1086);
         assertEquals(1086,grupa.getNrGrupa());
@@ -20,6 +25,7 @@ public class GrupaTest {
     }
 
     @Test
+    @Category(TesteUrgente.class)
     public void testConstructorLimitaSuperioara() {
         Grupa grupa = new Grupa(1100);
         assertEquals(1100,grupa.getNrGrupa());
@@ -41,6 +47,7 @@ public class GrupaTest {
     }
 
     @Test
+    @Category(TesteUrgente.class)
     public void testConstructorRange() {
         Grupa grupa = new Grupa(1001);
         assertEquals(1001,grupa.getNrGrupa());
